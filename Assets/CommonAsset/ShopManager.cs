@@ -22,7 +22,7 @@ namespace DarkcupGames {
         public List<Sprite> shurikenSprites;
         public SpriteRenderer razorRenderer;
 
-        public ShopIAPManager shop;
+       // public ShopIAPManager shop;
 
         List<ShopItemData> datas;
 
@@ -146,13 +146,14 @@ namespace DarkcupGames {
         public void BuyItem(string sku)
         {
             Debug.Log("You Buy item!");
-
+            /*
             shop.BuyProduct(sku, ()=> {
                 GameSystem.userdata.boughtItems.Add(sku);
                 GameSystem.SaveUserDataToLocal();
 
                 Init();
             });
+            */
         }
 
         public void BuyShuriken(string id, int price)

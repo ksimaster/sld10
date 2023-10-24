@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using UnityEngine.Purchasing;
+//using UnityEngine.Purchasing;
 using System;
 
 namespace DarkcupGames {
@@ -22,20 +22,20 @@ namespace DarkcupGames {
             iap = new MyIAPManager();
             //iap.popupConfirm = popupConfirm;
             //iap.Init(inputInit.text);
-            var builder = ConfigurationBuilder.Instance(StandardPurchasingModule.Instance());
+           // var builder = ConfigurationBuilder.Instance(StandardPurchasingModule.Instance());
 
-            builder.AddProduct("id_suriken_1", ProductType.Consumable);
-            builder.AddProduct("id_suriken_2", ProductType.Consumable);
-            builder.AddProduct("id_suriken_3", ProductType.Consumable);
+           // builder.AddProduct("id_suriken_1", ProductType.Consumable);
+           // builder.AddProduct("id_suriken_2", ProductType.Consumable);
+           // builder.AddProduct("id_suriken_3", ProductType.Consumable);
 
             for (int i = 1; i <= 5; i++) {
                 string sku = "sub_" + i + "_week";
-                builder.AddProduct(sku, ProductType.Subscription);
+              //  builder.AddProduct(sku, ProductType.Subscription);
             }
 
             for (int i = 1; i <= 5; i++) {
                 string sku = "sub_" + i + "_month";
-                builder.AddProduct(sku, ProductType.Subscription);
+               // builder.AddProduct(sku, ProductType.Subscription);
             }
 
             //builder.AddProduct("sub_1_week", ProductType.Subscription);
@@ -60,21 +60,22 @@ namespace DarkcupGames {
             //builder.AddProduct("sub9month", ProductType.Subscription);
             //builder.AddProduct("sub10month", ProductType.Subscription);
 
-            UnityPurchasing.Initialize(iap, builder);
+           // UnityPurchasing.Initialize(iap, builder);
 
             //iap.ShowAllProduct();
         }
-
+        /*
         public void BuyProduct(string productId, Action onComplete) {
             MyIAPManager.currentBuySKU = productId;
             iap.OnPurchaseClicked(productId);
             iap.onProcessSuccess = onComplete;
         }
-
+        */
+        /*
         public void TestBuyProduct() {
             iap.OnPurchaseClicked(inputSKU.text);
         }
-
+        */
         public void OnBuyComlete(string sku)
         {
             if (GameSystem.userdata.boughtItems == null)
