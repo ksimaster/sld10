@@ -1,0 +1,76 @@
+
+nor.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bg
+  rotate: false
+  xy: 2, 320
+  size: 706, 695
+  orig: 708, 697
+  offset: 1, 1
+  index: -1
+bia
+  rotate: false
+  xy: 710, 480
+  size: 147, 222
+  orig: 149, 224
+  offset: 1, 1
+  index: -1
+bo xuong
+  rotate: false
+  xy: 522, 35
+  size: 371, 157
+  orig: 371, 157
+  offset: 0, 0
+  index: -1
+cay
+  rotate: true
+  xy: 2, 2
+  size: 316, 518
+  orig: 318, 520
+  offset: 1, 1
+  index: -1
+dau1
+  rotate: true
+  xy: 895, 10
+  size: 66, 82
+  orig: 68, 84
+  offset: 1, 1
+  index: -1
+gay
+  rotate: true
+  xy: 522, 194
+  size: 124, 384
+  orig: 126, 386
+  offset: 1, 1
+  index: -1
+mouth
+  rotate: true
+  xy: 979, 49
+  size: 27, 15
+  orig: 29, 18
+  offset: 1, 2
+  index: -1
+skull
+  rotate: true
+  xy: 710, 391
+  size: 87, 88
+  orig: 89, 90
+  offset: 1, 1
+  index: -1
+tay
+  rotate: false
+  xy: 895, 78
+  size: 101, 114
+  orig: 101, 114
+  offset: 0, 0
+  index: -1
+than
+  rotate: false
+  xy: 710, 704
+  size: 147, 311
+  orig: 147, 311
+  offset: 0, 0
+  index: -1
