@@ -364,7 +364,7 @@ public class Gameplay : MonoBehaviour {
     }
 
     public void Virate() {
-        if (GameSystem.userdata.virate)
-            Handheld.Vibrate();
+        /*if (GameSystem.userdata.virate)
+            Handheld.Vibrate();*/
     }
 }
