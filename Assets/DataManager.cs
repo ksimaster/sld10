@@ -48,6 +48,7 @@ public class DataManager : MonoBehaviour
 
         if (YandexGame.EnvironmentData.language == "ru")
         {
+            titles.Add("Снимаю маску");
             titles.Add("Помоги ей согреться");
             titles.Add("На что смотрит эта девушка?");
             titles.Add("Найди вторую девушку");
