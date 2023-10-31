@@ -103,21 +103,24 @@ public class GameSystem : MonoBehaviour
     public static void SaveUserDataToLocal()
     {
         string json = JsonConvert.SerializeObject(GameSystem.userdata);
-        string path = FileUtilities.GetWritablePath(GameSystem.USER_DATA_FILE_NAME);
+        PlayerPrefs.SetString("JSON", json);
+        //string path = FileUtilities.GetWritablePath(GameSystem.USER_DATA_FILE_NAME);
 
-        FileUtilities.SaveFile(System.Text.Encoding.UTF8.GetBytes(json), path, true);
+        //FileUtilities.SaveFile(System.Text.Encoding.UTF8.GetBytes(json), path, true);
     }
 
     public static void LoadUserData()
     {
-        if (!FileUtilities.IsFileExist(GameSystem.USER_DATA_FILE_NAME))
+        if (!PlayerPrefs.HasKey("JSON"))//!FileUtilities.IsFileExist(GameSystem.USER_DATA_FILE_NAME))
         {
             GameSystem.userdata = new UserData();
             GameSystem.SaveUserDataToLocal();
         }
         else
         {
-            GameSystem.userdata = FileUtilities.DeserializeObjectFromFile<UserData>(GameSystem.USER_DATA_FILE_NAME);
+            //GameSystem.userdata = FileUtilities.DeserializeObjectFromFile<UserData>(GameSystem.USER_DATA_FILE_NAME);
+            GameSystem.userdata = FileUtilities.DeserializeObjectFromText<UserData>(PlayerPrefs.GetString("JSON"));
+           // PlayerPrefs.GetString("JSON");
         }
     }
     public void ClickButtonMusic()
