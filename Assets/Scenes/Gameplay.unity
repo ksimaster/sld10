@@ -2734,8 +2734,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b6a7fb09ddd048648116cab59708a18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  find: {fileID: 0}
-  currentLevel: 0
+  choose: {fileID: 0}
 --- !u!1 &722823977
 GameObject:
   m_ObjectHideFlags: 0
@@ -3453,6 +3452,26 @@ RectTransform:
   m_AnchoredPosition: {x: 0.0000038146973, y: 71.40004}
   m_SizeDelta: {x: 480.4348, y: 350.6452}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &954278320 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1360966347, guid: bbe48442d2aa4c74185ff565cf5e9f2c, type: 3}
+  m_PrefabInstance: {fileID: 5957115311732469393}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &954278326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954278320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9103d79fdb6f57242bf2fd63a295a91c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effectElementType: 0
+  effectTime: 0.2
+  number: 0
 --- !u!224 &981616912
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5844,6 +5863,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -7922,9 +7942,41 @@ PrefabInstance:
       value: -250.47
       objectReference: {fileID: 0}
     - target: {fileID: 1360966349, guid: bbe48442d2aa4c74185ff565cf5e9f2c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1360966349, guid: bbe48442d2aa4c74185ff565cf5e9f2c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1360966349, guid: bbe48442d2aa4c74185ff565cf5e9f2c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 307852592}
+    - target: {fileID: 1360966349, guid: bbe48442d2aa4c74185ff565cf5e9f2c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 5957115311785690944}
+    - target: {fileID: 1360966349, guid: bbe48442d2aa4c74185ff565cf5e9f2c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1360966349, guid: bbe48442d2aa4c74185ff565cf5e9f2c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: AddCoins
+      objectReference: {fileID: 0}
+    - target: {fileID: 1360966349, guid: bbe48442d2aa4c74185ff565cf5e9f2c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: DarkcupGames.CheatManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1360966349, guid: bbe48442d2aa4c74185ff565cf5e9f2c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1360966349, guid: bbe48442d2aa4c74185ff565cf5e9f2c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5957115310797439233, guid: bbe48442d2aa4c74185ff565cf5e9f2c, type: 3}
       propertyPath: m_Name
       value: CanvasPopup
@@ -8043,6 +8095,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43d8b4e934d457742a81ad2a6274f19b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5957115311785690944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5957115311785690932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03f65ac5ef22b594d86b867da8a573ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cheatPanel: {fileID: 0}
+  inputLevel: {fileID: 0}
 --- !u!224 &5957115312016513408 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 856848145, guid: bbe48442d2aa4c74185ff565cf5e9f2c, type: 3}

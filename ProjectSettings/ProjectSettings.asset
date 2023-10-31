@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: OS_Draw Puzzle 18 Plus
+  productName: 1
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -44,8 +44,8 @@ PlayerSettings:
   m_HolographicTrackingLossScreen: {fileID: 0}
   defaultScreenWidth: 1920
   defaultScreenHeight: 1080
-  defaultScreenWidthWeb: 960
-  defaultScreenHeightWeb: 600
+  defaultScreenWidthWeb: 720
+  defaultScreenHeightWeb: 1280
   m_StereoRenderingPath: 0
   m_ActiveColorSpace: 0
   m_MTRendering: 1
@@ -503,7 +503,18 @@ PlayerSettings:
   openGLRequireES31: 0
   openGLRequireES31AEP: 0
   openGLRequireES32: 0
-  m_TemplateCustomTags: {}
+  m_TemplateCustomTags:
+    BANNER_DYNAMIC_1: 
+    BANNER_DYNAMIC_2: 
+    BANNER_STATIC_1: 
+    BANNER_STATIC_2: 
+    CHANGE_BAR_COLOR: 
+    CHANGE_LOADING_SCREEN_BACKGROUND: 
+    CONFIGURE_SHADOWS: 
+    CONNECT_WEB_AUDIO_PLUGIN_FILES: 
+    ENABLE_CONSOLE: 
+    LOCK_ASPECT_RATIO_ON_DESKTOP: true
+    LOCK_ASPECT_RATIO_ON_MOBILE: true
   mobileMTRendering:
     Android: 1
     iPhone: 1
@@ -754,17 +765,18 @@ PlayerSettings:
   webGLDebugSymbols: 0
   webGLEmscriptenArgs: 
   webGLModulesDirectory: 
-  webGLTemplate: APPLICATION:Default
+  webGLTemplate: PROJECT:AT_YG1.5.2
   webGLAnalyzeBuildSize: 0
   webGLUseEmbeddedResources: 0
-  webGLCompressionFormat: 0
+  webGLCompressionFormat: 1
   webGLWasmArithmeticExceptions: 0
   webGLLinkerTarget: 1
   webGLThreadsSupport: 0
-  webGLDecompressionFallback: 0
+  webGLDecompressionFallback: 1
   webGLPowerPreference: 2
   scriptingDefineSymbols:
     Standalone: YG_PLUGIN_YANDEX_GAME
+    WebGL: YG_PLUGIN_YANDEX_GAME
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}

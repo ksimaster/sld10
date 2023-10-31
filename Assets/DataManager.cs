@@ -49,7 +49,15 @@ public class DataManager : MonoBehaviour
         if (YandexGame.EnvironmentData.language == "ru")
         {
             titles.Add("Снимаю маску");
-            titles.Add("Помоги ей согреться");
+        }
+        if (YandexGame.EnvironmentData.language == "tr")
+
+        {
+            titles.Add("Taking Off The Mask");
+        }
+
+
+        /*    titles.Add("Помоги ей согреться");
             titles.Add("На что смотрит эта девушка?");
             titles.Add("Найди вторую девушку");
             titles.Add("Помоги ему поднять вес");
@@ -98,7 +106,7 @@ public class DataManager : MonoBehaviour
             titles.Add("Поймай вора");
             titles.Add("Найди букву О");
             titles.Add("Найди букву О");
-        }
+        
         if (YandexGame.EnvironmentData.language == "en")
         {
             titles.Add("Taking Off The Mask");
@@ -151,7 +159,7 @@ public class DataManager : MonoBehaviour
             titles.Add("Catch the thief");
             titles.Add("Find the letter O");
             titles.Add("Find the letter O");
-        }
+        
         if (YandexGame.EnvironmentData.language == "tr")
 
         {
@@ -207,7 +215,7 @@ public class DataManager : MonoBehaviour
             titles.Add("O harfini bulun");
         }
 
-
+        */
         //1
 
 
