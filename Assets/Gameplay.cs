@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -6,6 +6,7 @@ using DarkcupGames;
 using UnityEngine.SceneManagement;
 using Spine.Unity;
 using TMPro;
+using YG;
 
 public enum GameplayType { Erase, Draw, Find }
 
@@ -83,8 +84,18 @@ public class Gameplay : MonoBehaviour {
         while (count < 10) {
             GameObject obj = Resources.Load<GameObject>("Levels/Level" + (level + count + 1));
             closeSpecialLevelButton.SetActive(false);
-            txtLevel.text = "Level " + (level + count + 1);
-
+            if (YandexGame.EnvironmentData.language == "ru")
+            {
+                txtLevel.text = "УРОВЕНЬ " + (level + count + 1);
+            }
+            if (YandexGame.EnvironmentData.language == "en")
+            {
+                txtLevel.text = "LEVEL " + (level + count + 1);
+            }
+            if (YandexGame.EnvironmentData.language == "tr")
+            {
+                txtLevel.text = "DÜZEY " + (level + count + 1);
+            }
             txtQuestion.text = "";
             if (DataManager.Instance.levelInfos.Count > level + count) {
                 LevelInfo info = DataManager.Instance.levelInfos[level + count];
@@ -110,7 +121,19 @@ public class Gameplay : MonoBehaviour {
             GameSystem.userdata.level = 0;
             GameSystem.SaveUserDataToLocal();
             levelObject = Resources.Load<GameObject>("Levels/Level1");
-            txtLevel.text = "LEVEL 1";
+            if (YandexGame.EnvironmentData.language == "ru")
+            {
+                txtLevel.text = "УРОВЕНЬ 1";
+            }
+            if (YandexGame.EnvironmentData.language == "en")
+            {
+                txtLevel.text = "LEVEL 1";
+            }
+            if (YandexGame.EnvironmentData.language == "tr")
+            {
+                txtLevel.text = "DÜZEY 1";
+            }
+          
         }
         if (!GameSystem.userdata.showRating && GameSystem.userdata.level == 5) {
             popUpRating.SetActive(true);

@@ -1245,10 +1245,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: LEVEL 10
+  m_text: "\u0423\u0420\u041E\u0412\u0415\u041D\u042C"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 78927c33bf717584eb85f2e9fe72dc3f, type: 2}
+  m_sharedMaterial: {fileID: -4998292950064424597, guid: 78927c33bf717584eb85f2e9fe72dc3f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1272,13 +1272,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 44.23
+  m_fontSizeBase: 44.23
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -4943,7 +4943,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: -0.0000039935, y: -156.7}
-  m_SizeDelta: {x: 385.4193, y: 130.83}
+  m_SizeDelta: {x: 385.4193, y: 99.0509}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1388835743
 MonoBehaviour:
@@ -4967,8 +4967,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: What is she hiding?
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 78927c33bf717584eb85f2e9fe72dc3f, type: 2}
+  m_sharedMaterial: {fileID: -4998292950064424597, guid: 78927c33bf717584eb85f2e9fe72dc3f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4992,10 +4992,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 32
-  m_fontSizeBase: 32
+  m_fontSize: 41.25
+  m_fontSizeBase: 40
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
