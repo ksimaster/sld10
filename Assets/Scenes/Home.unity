@@ -57030,7 +57030,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5957115310797439236, guid: bbe48442d2aa4c74185ff565cf5e9f2c, type: 3}
       propertyPath: m_SortingOrder
-      value: -1
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 5957115310797439239, guid: bbe48442d2aa4c74185ff565cf5e9f2c, type: 3}
       propertyPath: m_Pivot.x
