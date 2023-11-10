@@ -47,12 +47,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab1df6402113f3e41b571507feadd1ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  draw: {fileID: 0}
-  isReturn: 0
-  isErase: 0
-  isDraw: 0
   mouseCursor: {fileID: 0}
-  returnToPos: {fileID: 0}
+  wrongAnim: 
+  isReturn: 0
+  isDraw: 0
+  isCorrect: 0
 --- !u!61 &1087356609
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -91,12 +90,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab1df6402113f3e41b571507feadd1ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  draw: {fileID: 1271286180454191358}
-  isReturn: 0
-  isErase: 1
-  isDraw: 0
   mouseCursor: {fileID: 0}
-  returnToPos: {fileID: 0}
+  wrongAnim: 
+  isReturn: 0
+  isDraw: 0
+  isCorrect: 0
 --- !u!82 &5060369145339421911
 AudioSource:
   m_ObjectHideFlags: 0
@@ -462,7 +460,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ae1ba81003c9249fcac2d4be8f1769cb, type: 2}
+  - {fileID: 2100000, guid: aa3a4d7fe3e27cc48be7db399cc86fe5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -514,10 +512,8 @@ MonoBehaviour:
   calculateTangents: 0
   maskInteraction: 1
   maskMaterials:
-    materialsMaskDisabled:
-    - {fileID: 2100000, guid: aa3a4d7fe3e27cc48be7db399cc86fe5, type: 2}
-    materialsInsideMask:
-    - {fileID: 2100000, guid: ae1ba81003c9249fcac2d4be8f1769cb, type: 2}
+    materialsMaskDisabled: []
+    materialsInsideMask: []
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
   _animationName: normal
@@ -589,6 +585,10 @@ PrefabInstance:
     - target: {fileID: 6391443204089928625, guid: fe8aec0d32ce0440aacc30bb591991f4, type: 3}
       propertyPath: m_Name
       value: spriteMask256
+      objectReference: {fileID: 0}
+    - target: {fileID: 6391443204089928625, guid: fe8aec0d32ce0440aacc30bb591991f4, type: 3}
+      propertyPath: m_TagString
+      value: Find
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe8aec0d32ce0440aacc30bb591991f4, type: 3}

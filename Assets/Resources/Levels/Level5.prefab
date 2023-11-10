@@ -362,6 +362,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: spriteMask256
       objectReference: {fileID: 0}
+    - target: {fileID: 6391443204089928625, guid: fe8aec0d32ce0440aacc30bb591991f4, type: 3}
+      propertyPath: m_TagString
+      value: Find
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe8aec0d32ce0440aacc30bb591991f4, type: 3}
 --- !u!114 &1123797772625238792 stripped

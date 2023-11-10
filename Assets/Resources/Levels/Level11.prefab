@@ -32,6 +32,7 @@ Transform:
   - {fileID: 3480406047132159015}
   - {fileID: 3480406048486106990}
   - {fileID: 485619655423443929}
+  - {fileID: 3589624665815606923}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -437,7 +438,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a55ec5302b65c478cbcfc0ac2d03cb79, type: 2}
+  - {fileID: 2100000, guid: cb374efbfc0de4ca2a4090c4035f924a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -489,10 +490,43 @@ MonoBehaviour:
   calculateTangents: 0
   maskInteraction: 1
   maskMaterials:
-    materialsMaskDisabled: []
-    materialsInsideMask: []
+    materialsMaskDisabled:
+    - {fileID: 2100000, guid: a55ec5302b65c478cbcfc0ac2d03cb79, type: 2}
+    materialsInsideMask:
+    - {fileID: 2100000, guid: cb374efbfc0de4ca2a4090c4035f924a, type: 2}
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
   _animationName: win
   loop: 1
   timeScale: 1
+--- !u!1 &8906765088215102660
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3589624665815606923}
+  m_Layer: 0
+  m_Name: Find
+  m_TagString: Find
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3589624665815606923
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8906765088215102660}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.1815, y: -0.4108, z: -0.0058392202}
+  m_LocalScale: {x: 5.3748913, y: 8.531641, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 485619654108143824}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

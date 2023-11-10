@@ -363,8 +363,10 @@ MonoBehaviour:
   - {fileID: 7628333016211140507}
   - {fileID: 1131948563}
   - {fileID: 211383853}
-  isActive: 1
   isMultiple: 1
+  isSpeical: 0
+  isImmediately: 0
+  maskAnim: {fileID: 0}
 --- !u!1 &7628333016211140507
 GameObject:
   m_ObjectHideFlags: 0
@@ -377,7 +379,7 @@ GameObject:
   - component: {fileID: 7628333016211140484}
   m_Layer: 0
   m_Name: findObject_Head
-  m_TagString: Untagged
+  m_TagString: Find
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -446,7 +448,7 @@ SpriteRenderer:
   m_Size: {x: 0.84, y: 0.93}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 1
   m_SpriteSortPoint: 0
 --- !u!1001 &5034639569004640793

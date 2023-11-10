@@ -10,7 +10,7 @@ public class UserData
     public long nextDay;
     public string userid;
     public string username;
-    public float gold;
+    public float gold = 100;
     public float diamond;
     public int level;
     public int maxLevel;

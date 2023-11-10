@@ -163,7 +163,7 @@ public class Gameplay : MonoBehaviour {
             scanImg.sprite = drawObject;
             drawManager.gameObject.SetActive(true);
             GameplayType = GameplayType.Draw;
-            if (PlayerPrefs.GetInt("tutorial_draw", 0) == 0) {
+            if (PlayerPrefs.GetInt("tutorial_draw") == 0) {
                 PlayerPrefs.SetInt("tutorial_draw", 1);
                 LeanTween.delayedCall(2f, () => {
                     Hint();
@@ -173,7 +173,7 @@ public class Gameplay : MonoBehaviour {
             drawManager.gameObject.SetActive(false);
             scanImg.sprite = cucgom;
             GameplayType = GameplayType.Erase;
-            if (PlayerPrefs.GetInt("tutorial_erase", 0) == 0) {
+            if (PlayerPrefs.GetInt("tutorial_erase") == 0) {
                 PlayerPrefs.SetInt("tutorial_erase", 1);
                 LeanTween.delayedCall(2f, () => {
                     Hint();
@@ -268,28 +268,32 @@ public class Gameplay : MonoBehaviour {
     }
 
     public void Hint() {
-        var draw = FindObjectOfType<DrawLevel>();
-        if (draw != null) {
-            draw.Hint();
+        //var draw = FindObjectOfType<DrawLevel>();
+        var drawOur = GameObject.FindGameObjectsWithTag("Find");
+        if (drawOur != null) {
+            //draw.Hint();
+            GuidePosition(drawOur[0].transform.position);
             return;
         }
 
-        var manyTimes = FindObjectOfType<EraseManyTimes>();
-        if (manyTimes != null) {
-            GuidePosition(manyTimes.guidePosition.position);
+        //var manyTimes = FindObjectOfType<EraseManyTimes>();
+        var erase = GameObject.FindGameObjectsWithTag("Find");
+        if (erase != null) {
+            GuidePosition(erase[0].transform.position);
             return;
         }
 
-        var level = FindObjectOfType<LevelManager>();
-        if (level != null) {
-            GuidePosition(level.GetGuidePosition());
+        //var level = FindObjectOfType<LevelManager>();
+        var lvl = GameObject.FindGameObjectsWithTag("Find");
+        if (lvl != null) {
+            GuidePosition(lvl[0].transform.position);
         }
     }
 
     public void GuidePosition(Vector2 pos) {
         guideObject.SetActive(true);
         guideObject.transform.position = new Vector2(0, 0);
-        LeanTween.move(guideObject, pos, 1f).setEaseOutCubic().setOnComplete(() => {
+        LeanTween.move(guideObject, pos, 3f).setEaseOutCubic().setOnComplete(() => {
             guideObject.SetActive(false);
         });
     }
