@@ -1695,8 +1695,8 @@ MonoBehaviour:
   winSound: {fileID: 8300000, guid: dca27389904275a458f388fea04309c5, type: 3}
   scanImg: {fileID: 722823980}
   canvasGameplay: {fileID: 1209224692}
-  homeButton: {fileID: 7464312470232073153}
-  settingButton: {fileID: 7464312469537093490}
+  homeButton: {fileID: 7464312469537093490}
+  settingButton: {fileID: 0}
   drawManager: {fileID: 291542219}
   playerLevel: {fileID: 0}
   eraseObject: {fileID: 21300000, guid: a2bf67cc12fae1b409a45324070eddc1, type: 3}
@@ -9448,8 +9448,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 50
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 78927c33bf717584eb85f2e9fe72dc3f, type: 2}
+  m_sharedMaterial: {fileID: -4998292950064424597, guid: 78927c33bf717584eb85f2e9fe72dc3f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -9473,8 +9473,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -9931,19 +9931,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7464312469537093493}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7464312469442605685}
-        m_TargetAssemblyTypeName: DarkcupGames.ShowHideChangeSceneLogic, Assembly-CSharp
-        m_MethodName: Show
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 7464312470575250231}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!224 &7464312469537093491
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9962,7 +9950,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 36.772, y: -31}
-  m_SizeDelta: {x: 74.551, y: 70.1375}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &7464312469537093492
 CanvasRenderer:
