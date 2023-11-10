@@ -9,14 +9,18 @@ public class CustomLevel49 : FindAndWinLevel
 {
     GameObject findObj;
 
-    private void Start() {
-        Vector2 pos = Camera.main.ScreenToWorldPoint(Gameplay.Instance.settingButton.transform.position);
-        findObj = Instantiate(new GameObject(), pos, Quaternion.identity);
+    private void Start()
+    {
+        Vector3 pos = new Vector3(1.5f, 1.7f, 0f);
+        findObj = new GameObject();
+        findObj.transform.position = pos;
         objectFinds = new List<GameObject>() { findObj };
         isMultiple = false;
     }
-    public override Vector3 GetGuidePosition() {
-        Vector2 pos = Camera.main.ScreenToWorldPoint(Gameplay.Instance.settingButton.transform.position);
+
+    public override Vector3 GetGuidePosition()
+    {
+        Vector3 pos = new Vector3(1.5f, 1.7f, 0f);
         return pos;
     }
 }
