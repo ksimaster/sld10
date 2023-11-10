@@ -37,6 +37,7 @@ public class Gameplay : MonoBehaviour {
     public Sprite drawObject;
     public bool isBranchLevel;
     public Sprite cucgom;
+    public int maxLevel;
     [SerializeField] private GameObject levelObject;
     bool won = false;
     bool drawLevel;
@@ -315,8 +316,17 @@ public class Gameplay : MonoBehaviour {
             SpawnSpecialLevel();
             return;
         }
-        GameSystem.userdata.level++;
-        if (GameSystem.userdata.level > GameSystem.userdata.maxLevel) {
+        if (GameSystem.userdata.level < maxLevel-1)
+        {
+            GameSystem.userdata.level++;
+        }
+        else
+        {
+            GameSystem.userdata.level = 0;
+        }
+        
+        if (GameSystem.userdata.level > GameSystem.userdata.maxLevel && GameSystem.userdata.maxLevel != maxLevel) 
+        {
             GameSystem.userdata.maxLevel = GameSystem.userdata.level;
         }
         GameSystem.SaveUserDataToLocal();

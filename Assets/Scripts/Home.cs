@@ -97,7 +97,7 @@ public class Home : MonoBehaviour
         GameSystem.SaveUserDataToLocal();
         Init();
         ShowStory(nextIndex);
-
+        // переполнение и переход по историям писать здесь
     }
 
     public void PreviousStory()
