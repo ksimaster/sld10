@@ -8294,6 +8294,7 @@ MonoBehaviour:
   drawObject: {fileID: 0}
   isBranchLevel: 0
   cucgom: {fileID: 0}
+  maxLevel: 0
   levelObject: {fileID: 0}
   isPlayingSpecial: 0
 --- !u!1 &321643311
@@ -17528,7 +17529,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7464312470558978610, guid: 6783e9d96e1774f4aa7ef353ae57bb4e, type: 3}
   m_PrefabInstance: {fileID: 7464312470684499328}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1932250025}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
@@ -51023,6 +51024,11 @@ MonoBehaviour:
   processTranslateLabel: 3/19 completed
   componentTextField: 1
   countLang: 3
+--- !u!1 &1932250025 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7464312470558978608, guid: 6783e9d96e1774f4aa7ef353ae57bb4e, type: 3}
+  m_PrefabInstance: {fileID: 7464312470684499328}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1933525817
 GameObject:
   m_ObjectHideFlags: 0
@@ -53348,26 +53354,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1973381786}
   m_CullTransparentMesh: 1
---- !u!1 &1977167790 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4963378607071598377, guid: 59d364849ec44544b97b19ac5b65d436, type: 3}
+--- !u!114 &1977167793 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 85093832, guid: 59d364849ec44544b97b19ac5b65d436, type: 3}
   m_PrefabInstance: {fileID: 85093830}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1977167792
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1977167790}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 38000c0d8a8ebd247985e051be253727, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  txtGold: {fileID: 0}
-  txtDiamond: {fileID: 0}
-  userUpdater: {fileID: 0}
 --- !u!1 &1978593897
 GameObject:
   m_ObjectHideFlags: 0
@@ -56352,6 +56349,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2120295247}
   m_CullTransparentMesh: 1
+--- !u!1 &2125506065 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 606516900517858977, guid: 6783e9d96e1774f4aa7ef353ae57bb4e, type: 3}
+  m_PrefabInstance: {fileID: 7464312470684499328}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2132987685 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 34404548, guid: 59d364849ec44544b97b19ac5b65d436, type: 3}
@@ -57149,6 +57151,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 204545114, guid: 6783e9d96e1774f4aa7ef353ae57bb4e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1977167793}
+    - target: {fileID: 204545114, guid: 6783e9d96e1774f4aa7ef353ae57bb4e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ClickButtonMusic
+      objectReference: {fileID: 0}
+    - target: {fileID: 204545115, guid: 6783e9d96e1774f4aa7ef353ae57bb4e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: aa06b4a85dfc7f345958516279bd79bd, type: 3}
     - target: {fileID: 486040397, guid: 6783e9d96e1774f4aa7ef353ae57bb4e, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -57183,6 +57197,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1794914569, guid: 6783e9d96e1774f4aa7ef353ae57bb4e, type: 3}
       propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 622753618138251188, guid: 6783e9d96e1774f4aa7ef353ae57bb4e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 468a4549c0f0be44fa7103071cc90426, type: 3}
+    - target: {fileID: 640495996981505758, guid: 6783e9d96e1774f4aa7ef353ae57bb4e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1977167793}
+    - target: {fileID: 640495996981505758, guid: 6783e9d96e1774f4aa7ef353ae57bb4e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1932250025}
+    - target: {fileID: 640495996981505758, guid: 6783e9d96e1774f4aa7ef353ae57bb4e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 2125506065}
+    - target: {fileID: 640495996981505758, guid: 6783e9d96e1774f4aa7ef353ae57bb4e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ClickButtonSound
+      objectReference: {fileID: 0}
+    - target: {fileID: 640495996981505758, guid: 6783e9d96e1774f4aa7ef353ae57bb4e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 640495996981505758, guid: 6783e9d96e1774f4aa7ef353ae57bb4e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_BoolArgument
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3931097558763244239, guid: 6783e9d96e1774f4aa7ef353ae57bb4e, type: 3}
@@ -57232,7 +57274,15 @@ PrefabInstance:
     - target: {fileID: 7464312468932938469, guid: 6783e9d96e1774f4aa7ef353ae57bb4e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1977167792}
+      objectReference: {fileID: 1977167793}
+    - target: {fileID: 7464312468932938469, guid: 6783e9d96e1774f4aa7ef353ae57bb4e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ClickButtonMusic
+      objectReference: {fileID: 0}
+    - target: {fileID: 7464312468932938470, guid: 6783e9d96e1774f4aa7ef353ae57bb4e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 961dd859a5fb5e84bbcc6c950d0c9b3e, type: 3}
     - target: {fileID: 7464312469057669767, guid: 6783e9d96e1774f4aa7ef353ae57bb4e, type: 3}
       propertyPath: m_Name
       value: CanvasAll
@@ -57336,7 +57386,7 @@ PrefabInstance:
     - target: {fileID: 7464312469063830678, guid: 6783e9d96e1774f4aa7ef353ae57bb4e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1977167792}
+      objectReference: {fileID: 0}
     - target: {fileID: 7464312469063830679, guid: 6783e9d96e1774f4aa7ef353ae57bb4e, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -57381,6 +57431,10 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 7464312470189982674, guid: 6783e9d96e1774f4aa7ef353ae57bb4e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7464312470558978609, guid: 6783e9d96e1774f4aa7ef353ae57bb4e, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 9
@@ -57392,7 +57446,15 @@ PrefabInstance:
     - target: {fileID: 7464312470558978610, guid: 6783e9d96e1774f4aa7ef353ae57bb4e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1977167792}
+      objectReference: {fileID: 1977167793}
+    - target: {fileID: 7464312470558978610, guid: 6783e9d96e1774f4aa7ef353ae57bb4e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ClickButtonSound
+      objectReference: {fileID: 0}
+    - target: {fileID: 7464312470558978611, guid: 6783e9d96e1774f4aa7ef353ae57bb4e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f3bbf866af6e0ad4dbdbca3045e0d387, type: 3}
     - target: {fileID: 8595076922400142941, guid: 6783e9d96e1774f4aa7ef353ae57bb4e, type: 3}
       propertyPath: m_fontAsset
       value: 

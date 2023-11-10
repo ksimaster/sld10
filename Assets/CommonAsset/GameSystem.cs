@@ -9,9 +9,6 @@ using DarkcupGames;
 
 public class GameSystem : MonoBehaviour
 {
-
-
-
     public static GameSystem Instance;
     public static UserData  userdata;
 
@@ -31,6 +28,7 @@ public class GameSystem : MonoBehaviour
 
     private void Start()
     {
+        CheckSoundMusic();
         if (txtGold)
         {
             txtGold.text = userdata.gold.ToString();
@@ -129,6 +127,12 @@ public class GameSystem : MonoBehaviour
 
         AudioSystem.Instance.SetBGM(GameSystem.userdata.playBGM);
         SaveUserDataToLocal();
+    }
+
+    public void CheckSoundMusic()
+    {
+        AudioSystem.Instance.SetFXSound(GameSystem.userdata.playSound);
+        AudioSystem.Instance.SetBGM(GameSystem.userdata.playBGM);
     }
 
     public void ClickButtonSound()
