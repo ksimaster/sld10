@@ -238,9 +238,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 85093832, guid: 59d364849ec44544b97b19ac5b65d436, type: 3}
+      propertyPath: win
+      value: 
+      objectReference: {fileID: 1866460616}
+    - target: {fileID: 853300591, guid: 59d364849ec44544b97b19ac5b65d436, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1693068655, guid: 59d364849ec44544b97b19ac5b65d436, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2024892208, guid: 59d364849ec44544b97b19ac5b65d436, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4963378606018034402, guid: 59d364849ec44544b97b19ac5b65d436, type: 3}
       propertyPath: m_Name
@@ -292,26 +304,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59d364849ec44544b97b19ac5b65d436, type: 3}
---- !u!1 &85093831 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4963378607071598377, guid: 59d364849ec44544b97b19ac5b65d436, type: 3}
-  m_PrefabInstance: {fileID: 85093830}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &85093832
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 85093831}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38000c0d8a8ebd247985e051be253727, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  txtGold: {fileID: 0}
-  txtDiamond: {fileID: 0}
-  userUpdater: {fileID: 0}
 --- !u!114 &196786047 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2211564899198745196, guid: caf9732433f4dc044845763962493607, type: 3}
@@ -374,8 +366,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textMPComponent: {fileID: 236927779}
-  uniqueFontTMP: {fileID: 0}
   textLComponent: {fileID: 0}
   infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
   text: "\u041D\u0410\u0421\u0422\u0420\u041E\u0419\u041A\u0418"
@@ -688,8 +678,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textMPComponent: {fileID: 273216961}
-  uniqueFontTMP: {fileID: 0}
   textLComponent: {fileID: 0}
   infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
   text: "\u0413\u041B\u0410\u0412\u041D\u041E\u0415 \u041C\u0415\u041D\u042E"
@@ -1822,7 +1810,7 @@ PrefabInstance:
     - target: {fileID: 7464312468932938469, guid: 6783e9d96e1774f4aa7ef353ae57bb4e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 85093832}
+      objectReference: {fileID: 0}
     - target: {fileID: 7464312469057669767, guid: 6783e9d96e1774f4aa7ef353ae57bb4e, type: 3}
       propertyPath: m_Name
       value: CanvasAll
@@ -1922,7 +1910,7 @@ PrefabInstance:
     - target: {fileID: 7464312469063830678, guid: 6783e9d96e1774f4aa7ef353ae57bb4e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 85093832}
+      objectReference: {fileID: 0}
     - target: {fileID: 7464312469063830679, guid: 6783e9d96e1774f4aa7ef353ae57bb4e, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -2014,7 +2002,7 @@ PrefabInstance:
     - target: {fileID: 7464312470558978610, guid: 6783e9d96e1774f4aa7ef353ae57bb4e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 85093832}
+      objectReference: {fileID: 0}
     - target: {fileID: 8595076922400142941, guid: 6783e9d96e1774f4aa7ef353ae57bb4e, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -2593,8 +2581,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textMPComponent: {fileID: 1062174719}
-  uniqueFontTMP: {fileID: 0}
   textLComponent: {fileID: 0}
   infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
   text: Music
@@ -2633,17 +2619,6 @@ MonoBehaviour:
   processTranslateLabel: 3/3 completed
   componentTextField: 0
   countLang: 3
---- !u!114 &1062174719 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7464312468847295325, guid: 6783e9d96e1774f4aa7ef353ae57bb4e, type: 3}
-  m_PrefabInstance: {fileID: 722909433}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1062174716}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1136525153
 GameObject:
   m_ObjectHideFlags: 0
@@ -2839,8 +2814,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textMPComponent: {fileID: 1169351009}
-  uniqueFontTMP: {fileID: 0}
   textLComponent: {fileID: 0}
   infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
   text: Music
@@ -2879,17 +2852,6 @@ MonoBehaviour:
   processTranslateLabel: 3/3 completed
   componentTextField: 0
   countLang: 3
---- !u!114 &1169351009 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 555484460, guid: 6783e9d96e1774f4aa7ef353ae57bb4e, type: 3}
-  m_PrefabInstance: {fileID: 722909433}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1169351006}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!223 &1209224692 stripped
 Canvas:
   m_CorrespondingSourceObject: {fileID: 2835796553270859561, guid: eeadc56796468bf45987e31fa75e8e26, type: 3}
@@ -2912,8 +2874,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textMPComponent: {fileID: 1221083333}
-  uniqueFontTMP: {fileID: 0}
   textLComponent: {fileID: 0}
   infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
   text: Sound
@@ -2952,17 +2912,6 @@ MonoBehaviour:
   processTranslateLabel: 3/3 completed
   componentTextField: 0
   countLang: 3
---- !u!114 &1221083333 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8595076922400142941, guid: 6783e9d96e1774f4aa7ef353ae57bb4e, type: 3}
-  m_PrefabInstance: {fileID: 722909433}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1221083330}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1344541657 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1360966347, guid: bbe48442d2aa4c74185ff565cf5e9f2c, type: 3}
@@ -3314,8 +3263,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textMPComponent: {fileID: 1544536305}
-  uniqueFontTMP: {fileID: 0}
   textLComponent: {fileID: 0}
   infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
   text: "\u0413\u041B\u0410\u0412\u041D\u041E\u0415 \u041C\u0415\u041D\u042E"
@@ -3608,8 +3555,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textMPComponent: {fileID: 1695354717}
-  uniqueFontTMP: {fileID: 0}
   textLComponent: {fileID: 0}
   infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
   text: Sound
@@ -3648,17 +3593,6 @@ MonoBehaviour:
   processTranslateLabel: 3/3 completed
   componentTextField: 0
   countLang: 3
---- !u!114 &1695354717 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7464312469338373829, guid: 6783e9d96e1774f4aa7ef353ae57bb4e, type: 3}
-  m_PrefabInstance: {fileID: 722909433}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1695354714}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1724139532 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4963378606018034402, guid: 59d364849ec44544b97b19ac5b65d436, type: 3}
@@ -3867,7 +3801,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   noMoneyPopup: {fileID: 864959905}
   shopDatas:
-  - price: 50
+  - price: 100
     currencyType: 0
     buyComplete:
       m_PersistentCalls:
@@ -3900,6 +3834,11 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   paygoldButton: {fileID: 0}
+--- !u!1 &1866460616 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2024892208, guid: 59d364849ec44544b97b19ac5b65d436, type: 3}
+  m_PrefabInstance: {fileID: 85093830}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1870923278
 GameObject:
   m_ObjectHideFlags: 0
@@ -4042,8 +3981,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textMPComponent: {fileID: 2042224828}
-  uniqueFontTMP: {fileID: 0}
   textLComponent: {fileID: 0}
   infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
   text: "\u041F\u041E\u0411\u0415\u0414\u0410"
@@ -4376,7 +4313,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2835796553260676997, guid: eeadc56796468bf45987e31fa75e8e26, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2835796553260676999, guid: eeadc56796468bf45987e31fa75e8e26, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -4481,6 +4418,10 @@ PrefabInstance:
     - target: {fileID: 2835796553559254169, guid: eeadc56796468bf45987e31fa75e8e26, type: 3}
       propertyPath: m_LocalScale.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2835796554244848760, guid: eeadc56796468bf45987e31fa75e8e26, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2985302460805901714, guid: eeadc56796468bf45987e31fa75e8e26, type: 3}
       propertyPath: m_AnchoredPosition.x
