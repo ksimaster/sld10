@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6b1a969d94f8fbf4b8e4a3aab1a46d52, type: 2}
+  - {fileID: 2100000, guid: b9c9e8802d07d2741adb9dd0db0e2177, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -114,8 +114,10 @@ MonoBehaviour:
   calculateTangents: 0
   maskInteraction: 1
   maskMaterials:
-    materialsMaskDisabled: []
-    materialsInsideMask: []
+    materialsMaskDisabled:
+    - {fileID: 2100000, guid: 6b1a969d94f8fbf4b8e4a3aab1a46d52, type: 2}
+    materialsInsideMask:
+    - {fileID: 2100000, guid: b9c9e8802d07d2741adb9dd0db0e2177, type: 2}
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
   _animationName: normal
@@ -156,6 +158,7 @@ Transform:
   - {fileID: 5512720992322528527}
   - {fileID: 6446036120114109986}
   - {fileID: 1789123697}
+  - {fileID: 6062297709980614709}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -331,6 +334,37 @@ Transform:
   m_Father: {fileID: 791600150511649960}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3534366510852250403
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6062297709980614709}
+  m_Layer: 0
+  m_Name: Find
+  m_TagString: Find
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6062297709980614709
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3534366510852250403}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.6, y: -1.55, z: -0.0058392202}
+  m_LocalScale: {x: 2.4562256, y: 2.9776525, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 791600150511649960}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4327381415765623577
 GameObject:
   m_ObjectHideFlags: 0
@@ -393,7 +427,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6b1a969d94f8fbf4b8e4a3aab1a46d52, type: 2}
+  - {fileID: 2100000, guid: b9c9e8802d07d2741adb9dd0db0e2177, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -445,8 +479,10 @@ MonoBehaviour:
   calculateTangents: 0
   maskInteraction: 1
   maskMaterials:
-    materialsMaskDisabled: []
-    materialsInsideMask: []
+    materialsMaskDisabled:
+    - {fileID: 2100000, guid: 6b1a969d94f8fbf4b8e4a3aab1a46d52, type: 2}
+    materialsInsideMask:
+    - {fileID: 2100000, guid: b9c9e8802d07d2741adb9dd0db0e2177, type: 2}
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
   _animationName: normal

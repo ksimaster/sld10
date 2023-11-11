@@ -277,7 +277,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 34daf85703cab4dec8c7c682b9ba2ee6, type: 2}
+  - {fileID: 2100000, guid: aa7b301131965084a87e2a242261fdf5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -329,8 +329,10 @@ MonoBehaviour:
   calculateTangents: 0
   maskInteraction: 1
   maskMaterials:
-    materialsMaskDisabled: []
-    materialsInsideMask: []
+    materialsMaskDisabled:
+    - {fileID: 2100000, guid: 34daf85703cab4dec8c7c682b9ba2ee6, type: 2}
+    materialsInsideMask:
+    - {fileID: 2100000, guid: aa7b301131965084a87e2a242261fdf5, type: 2}
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
   _animationName: normal
@@ -365,7 +367,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2329091300528764832}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2329091300528764833
 GameObject:
@@ -400,6 +402,7 @@ Transform:
   - {fileID: 1631216134089535518}
   - {fileID: 2329091301898589353}
   - {fileID: 7363335495094736391}
+  - {fileID: 5906341340064930346}
   - {fileID: 5829543059520275621}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -546,6 +549,37 @@ MonoBehaviour:
   _animationName: normal
   loop: 1
   timeScale: 1
+--- !u!1 &3490412565331997089
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5906341340064930346}
+  m_Layer: 0
+  m_Name: Find
+  m_TagString: Find
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5906341340064930346
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3490412565331997089}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.3927, y: 0.5246, z: -0.0058392202}
+  m_LocalScale: {x: 5.3681307, y: 6.2062116, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2329091300528764832}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7363335495094736408
 GameObject:
   m_ObjectHideFlags: 0
