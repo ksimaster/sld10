@@ -17,17 +17,22 @@ public class GameSystem : MonoBehaviour
     public TextMeshProUGUI txtGold;
     public TextMeshProUGUI txtDiamond;
     public UIUpdater userUpdater;
-
+    public GameObject win;
+    public const float win_money = 25;
+    private int countGold = 0;
+ 
     public System.Type userDataType;
 
     void Awake()
     {
         Instance = this;
         LoadUserData();
+
     }
 
     private void Start()
     {
+        PlayerPrefs.SetInt("CountGold", 0);
         CheckSoundMusic();
         if (txtGold)
         {
@@ -48,11 +53,26 @@ public class GameSystem : MonoBehaviour
         }
     }
 
-   
-
-    public void AddGold(long amount)
+    private void Update()
     {
-        StartCoroutine(IEIncreaseNumber(txtGold, (long)userdata.gold, (long)userdata.gold + amount, 0.2f));
+        /*
+        if (win.activeSelf && countGold == 0) 
+        {
+            AddGold(win_money);
+            countGold = 1;
+        }
+        */
+        if (win.activeSelf && PlayerPrefs.GetInt("CountGold") == 0)
+        {
+            AddGold(win_money);
+            PlayerPrefs.SetInt("CountGold", 1);
+        }
+    }
+
+
+    public void AddGold(float amount)
+    {
+        StartCoroutine(IEIncreaseNumber(txtGold, userdata.gold, userdata.gold + amount, 25f));
         userdata.gold += amount;
         SaveUserDataToLocal();
     }
@@ -70,14 +90,15 @@ public class GameSystem : MonoBehaviour
         return vectorToTarget;
     }
 
-    public IEnumerator IEIncreaseNumber(TextMeshProUGUI txtNumber, long startGold, long endGold, float effectTime, string endText = "")
+    public IEnumerator IEIncreaseNumber(TextMeshProUGUI txtNumber, float startGold, float endGold, float effectTime, string endText = "")
     {
-        int increase = (int)((endGold - startGold) / (effectTime / Time.deltaTime));
+        int increase = (int)((endGold - startGold) / (effectTime)/* / Time.deltaTime)*/); 
+        //int increase = 1;
         if (increase == 0)
         {
             increase = endGold > startGold ? 1 : -1;
         }
-        long gold = startGold;
+        float gold = startGold;
         bool loop = true;
         while (loop)
         {
@@ -94,7 +115,8 @@ public class GameSystem : MonoBehaviour
 
             txtNumber.text = gold.ToString() + endText;
 
-            yield return new WaitForEndOfFrame();
+            //yield return new WaitForEndOfFrame();
+            yield return new WaitForSeconds(effectTime/10);
         }
     }
 

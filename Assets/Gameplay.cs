@@ -333,6 +333,7 @@ public class Gameplay : MonoBehaviour {
         {
             GameSystem.userdata.maxLevel = GameSystem.userdata.level;
         }
+        
         GameSystem.SaveUserDataToLocal();
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
