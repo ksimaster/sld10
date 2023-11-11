@@ -156,7 +156,10 @@ MonoBehaviour:
   lastWorldPos: {x: 0, y: 0}
   drawPoints: []
   isDrawing: 0
+  isPaint: 0
   erSize: 10
+  isBig: 0
+  isBigPercents: 0
   spriteMask: {fileID: 4318097884858873823}
 --- !u!61 &4318097884858873817
 BoxCollider2D:
@@ -368,7 +371,10 @@ MonoBehaviour:
   lastWorldPos: {x: 0, y: 0}
   drawPoints: []
   isDrawing: 0
+  isPaint: 0
   erSize: 10
+  isBig: 0
+  isBigPercents: 0
   spriteMask: {fileID: 4318097884893765433}
 --- !u!61 &4318097884893765435
 BoxCollider2D:
@@ -580,7 +586,10 @@ MonoBehaviour:
   lastWorldPos: {x: 0, y: 0}
   drawPoints: []
   isDrawing: 0
+  isPaint: 0
   erSize: 10
+  isBig: 0
+  isBigPercents: 0
   spriteMask: {fileID: 5431371752322251445}
 --- !u!61 &5431371752322251401
 BoxCollider2D:
@@ -698,7 +707,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ae22fc30a293b40d995b201e743fb5fd, type: 2}
+  - {fileID: 2100000, guid: 17604b662c80ba7489a3edc936395a0b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -750,8 +759,10 @@ MonoBehaviour:
   calculateTangents: 0
   maskInteraction: 1
   maskMaterials:
-    materialsMaskDisabled: []
-    materialsInsideMask: []
+    materialsMaskDisabled:
+    - {fileID: 2100000, guid: ae22fc30a293b40d995b201e743fb5fd, type: 2}
+    materialsInsideMask:
+    - {fileID: 2100000, guid: 17604b662c80ba7489a3edc936395a0b, type: 2}
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
   _animationName: normal
@@ -783,6 +794,37 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.51, y: 1.01, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9048221524724373116}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7937443350011204038
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4894791089412004043}
+  m_Layer: 0
+  m_Name: Find
+  m_TagString: Find
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4894791089412004043
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7937443350011204038}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.9, y: 0.41, z: -0.0058392202}
+  m_LocalScale: {x: 2.6235814, y: 4.602931, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 9048221524724373116}
@@ -822,6 +864,7 @@ Transform:
   - {fileID: 9048221526034969973}
   - {fileID: 4318097884893765413}
   - {fileID: 4318097884858873819}
+  - {fileID: 4894791089412004043}
   - {fileID: 1880727252402644135}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -844,6 +887,8 @@ MonoBehaviour:
   loopAnimation: 1
   checkers: []
   guidePosition: {fileID: 1880727252402644135}
+  maskAnim: {fileID: 0}
+  isMaskable: 0
 --- !u!1 &9048221526034969977
 GameObject:
   m_ObjectHideFlags: 0

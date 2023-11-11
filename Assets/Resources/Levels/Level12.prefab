@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 394258130082777142}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.1616, y: 1.6554, z: -0.0058392202}
+  m_LocalPosition: {x: 1.29, y: 0.78, z: -0.0058392202}
   m_LocalScale: {x: 6.536078, y: 5.2111464, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -431,7 +431,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a5f17aa3ff8604179983510af1071c74, type: 2}
+  - {fileID: 2100000, guid: 3a1b18b381c97f1418e39562f48ea921, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -483,8 +483,10 @@ MonoBehaviour:
   calculateTangents: 0
   maskInteraction: 1
   maskMaterials:
-    materialsMaskDisabled: []
-    materialsInsideMask: []
+    materialsMaskDisabled:
+    - {fileID: 2100000, guid: a5f17aa3ff8604179983510af1071c74, type: 2}
+    materialsInsideMask:
+    - {fileID: 2100000, guid: 3a1b18b381c97f1418e39562f48ea921, type: 2}
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
   _animationName: normal
