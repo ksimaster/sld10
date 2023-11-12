@@ -113,6 +113,30 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 29
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -233,20 +257,20 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       nor_0: 1393029695
-      nor_6: 1272215563
-      nor_5: 1831765847
+      nor_1: 1884032875
+      nor_10: -1096440024
+      nor_11: 1335595353
+      nor_12: 2106901322
       nor_13: -632731310
       nor_14: -1215363220
-      nor_8: 1728134711
       nor_2: -1546544265
-      nor_7: 1677002459
-      nor_12: 2106901322
       nor_3: -723393144
-      nor_11: 1335595353
-      nor_1: 1884032875
-      nor_9: -999596798
       nor_4: 1861515771
-      nor_10: -1096440024
+      nor_5: 1831765847
+      nor_6: 1272215563
+      nor_7: 1677002459
+      nor_8: 1728134711
+      nor_9: -999596798
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

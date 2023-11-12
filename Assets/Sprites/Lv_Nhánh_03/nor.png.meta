@@ -113,6 +113,30 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 29
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -212,33 +236,33 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       nor_0: -785498968
-      nor_6: 504493389
-      nor_5: -320548748
-      nor_13: 1097104824
-      nor_23: -1198730590
-      nor_14: -1072365240
-      nor_24: -1369368741
-      nor_8: 76529160
-      nor_2: 1987147847
-      nor_21: -951790964
-      nor_26: -1335353942
-      nor_7: -675729693
-      nor_12: 1789425212
-      nor_3: -1717337912
-      nor_19: -1668005790
-      nor_17: 1344001381
-      nor_20: -704845236
-      nor_18: 834244952
-      nor_25: 760348381
-      nor_11: -154343256
       nor_1: 143278291
-      nor_9: -853808077
-      nor_4: 1289918141
-      nor_16: -853566115
-      nor_22: 1031923226
-      nor_15: -936453693
       nor_10: 1981883120
+      nor_11: -154343256
+      nor_12: 1789425212
+      nor_13: 1097104824
+      nor_14: -1072365240
+      nor_15: -936453693
+      nor_16: -853566115
+      nor_17: 1344001381
+      nor_18: 834244952
+      nor_19: -1668005790
+      nor_2: 1987147847
+      nor_20: -704845236
+      nor_21: -951790964
+      nor_22: 1031923226
+      nor_23: -1198730590
+      nor_24: -1369368741
+      nor_25: 760348381
+      nor_26: -1335353942
       nor_27: 297280854
+      nor_3: -1717337912
+      nor_4: 1289918141
+      nor_5: -320548748
+      nor_6: 504493389
+      nor_7: -675729693
+      nor_8: 76529160
+      nor_9: -853808077
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
