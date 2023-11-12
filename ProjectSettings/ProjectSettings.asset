@@ -12,8 +12,8 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
-  productName: 1
+  companyName: HC Games
+  productName: 'DOP For Adults: Erase, Draw, Find'
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -39,7 +39,9 @@ PlayerSettings:
     y: 0
     width: 1
     height: 1
-  m_SplashScreenLogos: []
+  m_SplashScreenLogos:
+  - logo: {fileID: 21300000, guid: 3f48190ccd4624e42b26912acc6cea45, type: 3}
+    duration: 2
   m_VirtualRealitySplashScreen: {fileID: 0}
   m_HolographicTrackingLossScreen: {fileID: 0}
   defaultScreenWidth: 1920
@@ -509,7 +511,8 @@ PlayerSettings:
     BANNER_STATIC_1: 
     BANNER_STATIC_2: 
     CHANGE_BAR_COLOR: 
-    CHANGE_LOADING_SCREEN_BACKGROUND: 
+    CHANGE_LOADING_SCREEN_BACKGROUND: 'background-image: linear-gradient(#2976fa,
+      #6919c6);'
     CONFIGURE_SHADOWS: 
     CONNECT_WEB_AUDIO_PLUGIN_FILES: 
     ENABLE_CONSOLE: 

@@ -658,6 +658,10 @@ PrefabInstance:
       propertyPath: txtGold
       value: 
       objectReference: {fileID: 7464312469321439040}
+    - target: {fileID: 907671765, guid: 59d364849ec44544b97b19ac5b65d436, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1327375438, guid: 59d364849ec44544b97b19ac5b65d436, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
@@ -689,6 +693,14 @@ PrefabInstance:
     - target: {fileID: 1693068656, guid: 59d364849ec44544b97b19ac5b65d436, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -320
+      objectReference: {fileID: 0}
+    - target: {fileID: 1693068657, guid: 59d364849ec44544b97b19ac5b65d436, type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1693068658, guid: 59d364849ec44544b97b19ac5b65d436, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1844785459, guid: 59d364849ec44544b97b19ac5b65d436, type: 3}
       propertyPath: m_RootOrder

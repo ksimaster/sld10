@@ -116,7 +116,7 @@ public class GameSystem : MonoBehaviour
             txtNumber.text = gold.ToString() + endText;
 
             //yield return new WaitForEndOfFrame();
-            yield return new WaitForSeconds(effectTime/10);
+            yield return new WaitForSeconds(effectTime/1000);
         }
     }
 
