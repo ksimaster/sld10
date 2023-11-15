@@ -555,7 +555,7 @@ MonoBehaviour:
   additionalText: {fileID: 0}
   textHeight: 20
   processTranslateLabel: 3/3 completed
-  componentTextField: 0
+  componentTextField: 1
   countLang: 3
 --- !u!1 &6584929123433546675
 GameObject:
@@ -877,7 +877,7 @@ MonoBehaviour:
   additionalText: {fileID: 0}
   textHeight: 20
   processTranslateLabel: 3/3 completed
-  componentTextField: 0
+  componentTextField: 1
   countLang: 3
 --- !u!1 &7887850921832229072
 GameObject:
@@ -1378,5 +1378,5 @@ MonoBehaviour:
   additionalText: {fileID: 0}
   textHeight: 20
   processTranslateLabel: 3/3 completed
-  componentTextField: 0
+  componentTextField: 1
   countLang: 3
