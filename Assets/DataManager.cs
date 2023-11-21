@@ -53,7 +53,7 @@ public class DataManager : MonoBehaviour
             titles.Add("На что смотрит эта девушка?");
             titles.Add("Найди вторую девушку");
             titles.Add("Помоги ему поднять вес");
-            titles.Add("Поймай грабителя");
+            titles.Add("Поймай вора");//-
             titles.Add("Сделай ее счастливой");
             titles.Add("Помоги им расслабиться");
             titles.Add("Сделай фермера счастливым");
@@ -87,7 +87,7 @@ public class DataManager : MonoBehaviour
             titles.Add("Помоги ему доставить ей удовольствие");
             titles.Add("Помоги ему");
             titles.Add("Найдите первый полный бак");
-            titles.Add("Что она делает?");
+            titles.Add("Найди букву О");//-
             titles.Add("Разблокируйте мой телефон");
             titles.Add("Помоги ему стать певцом");
             titles.Add("Убей монстра");
@@ -95,7 +95,7 @@ public class DataManager : MonoBehaviour
             titles.Add("Убейте вампиров");
             titles.Add("Ему нужен призрак");
             titles.Add("Помогите послушать музыку");
-            titles.Add("Поймай вора");
+            titles.Add("Поймай вора");//-
             titles.Add("Найди букву О");
             titles.Add("Найди букву О");
         }
@@ -107,7 +107,7 @@ public class DataManager : MonoBehaviour
             titles.Add("What is the girl looking at?");
             titles.Add("Find the second girl");
             titles.Add("Help him lift the weight");
-            titles.Add("Catch the robber");
+            titles.Add("Catch the thief");//-
             titles.Add("Make her happy");
             titles.Add("Help them relax");
             titles.Add("Make the farmer happy");
@@ -141,7 +141,7 @@ public class DataManager : MonoBehaviour
             titles.Add("Help him please her");
             titles.Add("Help him");
             titles.Add("Find the first full tank");
-            titles.Add("What is she doing?");
+            titles.Add("Find the letter O");
             titles.Add("Unlock My Phone");
             titles.Add("Help him a singer");
             titles.Add("Kill the monster");
@@ -160,7 +160,7 @@ public class DataManager : MonoBehaviour
             titles.Add("Isınmasına yardım et");
             titles.Add("Kız neye bakıyor?");
             titles.Add("İkinci kızı bul");
-            titles.Add("Ağırlığı kaldırmasına yardım et");
+            titles.Add("Hırsızı yakala");
             titles.Add("Soyguncuyu yakala");
             titles.Add("Onu mutlu et");
             titles.Add("Rahatlamalarına yardım et");
@@ -195,7 +195,7 @@ public class DataManager : MonoBehaviour
             titles.Add("Onu memnun etmesine yardım et");
             titles.Add("Ona yardım et");
             titles.Add("İlk dolu tankı bulun");
-            titles.Add("O ne yapıyor?");
+            titles.Add("O harfini bulun");
             titles.Add("Telefonumun Kilidini Aç");
             titles.Add("Ona bir şarkıcıya yardım et");
             titles.Add("Canavarı öldür");
