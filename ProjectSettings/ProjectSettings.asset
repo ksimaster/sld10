@@ -46,8 +46,8 @@ PlayerSettings:
   m_HolographicTrackingLossScreen: {fileID: 0}
   defaultScreenWidth: 1920
   defaultScreenHeight: 1080
-  defaultScreenWidthWeb: 720
-  defaultScreenHeightWeb: 1280
+  defaultScreenWidthWeb: 1000
+  defaultScreenHeightWeb: 700
   m_StereoRenderingPath: 0
   m_ActiveColorSpace: 0
   m_MTRendering: 1
@@ -513,15 +513,24 @@ PlayerSettings:
     CHANGE_BAR_COLOR: 
     CHANGE_LOADING_SCREEN_BACKGROUND: 'background-image: linear-gradient(#2976fa,
       #6919c6);'
+    CHANGE_LOGO_IMAGE: 
     CONFIGURE_SHADOWS: 
     CONNECT_WEB_AUDIO_PLUGIN_FILES: 
+    CONNECT_YANDEX_SDK: 
+    DEVICE_PIXEL_RATIO: 
     ENABLE_CONSOLE: 
     GAME_DISTRIBUTION_GAME_ID: 
     LOCK_ASPECT_RATIO_ON_DESKTOP: true
     LOCK_ASPECT_RATIO_ON_MOBILE: true
     OVERLAY_BACKGROUND_COLOR: 
     PROGRESS_BAR_BACKGROUND_COLOR: 
+    PROGRESS_BAR_BORDER_COLOR: 
     PROGRESS_BAR_FILL_COLOR: 
+    PROJECT_ID: 
+    SHOW_PRELOADER_AD: 
+    TOKEN: 
+    WORKER_FILENAME: 
+    YASDK_SHOW_PRELOADER_AD: 
   mobileMTRendering:
     Android: 1
     iPhone: 1
@@ -772,7 +781,7 @@ PlayerSettings:
   webGLDebugSymbols: 0
   webGLEmscriptenArgs: 
   webGLModulesDirectory: 
-  webGLTemplate: PROJECT:AT_Bridge1.9.2
+  webGLTemplate: PROJECT:AT_Bridge1.9.0
   webGLAnalyzeBuildSize: 0
   webGLUseEmbeddedResources: 0
   webGLCompressionFormat: 1
@@ -783,7 +792,7 @@ PlayerSettings:
   webGLPowerPreference: 2
   scriptingDefineSymbols:
     Standalone: YG_PLUGIN_YANDEX_GAME
-    WebGL: YG_PLUGIN_YANDEX_GAME;YG_NEWTONSOFT_FOR_AUTOLOCALIZATION;YG_NEWTONSOFT_FOR_SAVES;YG_TEXT_MESH_PRO
+    WebGL: YG_NEWTONSOFT_FOR_AUTOLOCALIZATION;YG_NEWTONSOFT_FOR_SAVES;YG_TEXT_MESH_PRO;YG_PLUGIN_YANDEX_GAME
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}

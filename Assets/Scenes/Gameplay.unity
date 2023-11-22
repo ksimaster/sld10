@@ -764,6 +764,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59d364849ec44544b97b19ac5b65d436, type: 3}
+--- !u!114 &85093831 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 85093832, guid: 59d364849ec44544b97b19ac5b65d436, type: 3}
+  m_PrefabInstance: {fileID: 85093830}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38000c0d8a8ebd247985e051be253727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &102351080
 GameObject:
   m_ObjectHideFlags: 0
@@ -3755,13 +3766,13 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: fcbeb6898f6057b4d830439ce744d0b8, type: 3}
 --- !u!114 &788582859 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5064292178346001128, guid: fcbeb6898f6057b4d830439ce744d0b8, type: 3}
+  m_CorrespondingSourceObject: {fileID: 7109701445828149486, guid: fcbeb6898f6057b4d830439ce744d0b8, type: 3}
   m_PrefabInstance: {fileID: 788582858}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a592c5adaaee7242bb504e84ebe0df5, type: 3}
+  m_Script: {fileID: 11500000, guid: ffcc6d097e3ea2843b79a56b94e2e656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &805132226
@@ -5568,9 +5579,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 788582859}
-        m_TargetAssemblyTypeName: InstantGamesBridge.Modules.Advertisement.AdvertisementModule,
-          Assembly-CSharp
-        m_MethodName: ShowRewarded
+        m_TargetAssemblyTypeName: VKScript, Assembly-CSharp
+        m_MethodName: Reward
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6052,9 +6062,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 788582859}
-        m_TargetAssemblyTypeName: InstantGamesBridge.Modules.Advertisement.AdvertisementModule,
-          Assembly-CSharp
-        m_MethodName: ShowRewarded
+        m_TargetAssemblyTypeName: VKScript, Assembly-CSharp
+        m_MethodName: Reward
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9300,7 +9309,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1360966349, guid: bbe48442d2aa4c74185ff565cf5e9f2c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 6
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1360966349, guid: bbe48442d2aa4c74185ff565cf5e9f2c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
@@ -9328,7 +9337,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1360966349, guid: bbe48442d2aa4c74185ff565cf5e9f2c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: ShowInterstitial
+      value: Inter
       objectReference: {fileID: 0}
     - target: {fileID: 1360966349, guid: bbe48442d2aa4c74185ff565cf5e9f2c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -9336,7 +9345,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1360966349, guid: bbe48442d2aa4c74185ff565cf5e9f2c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: InstantGamesBridge.Modules.Advertisement.AdvertisementModule, Assembly-CSharp
+      value: VKScript, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1360966349, guid: bbe48442d2aa4c74185ff565cf5e9f2c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
@@ -10444,9 +10453,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: YG.YandexGame, Assembly-CSharp
-        m_MethodName: _FullscreenShow
+      - m_Target: {fileID: 788582859}
+        m_TargetAssemblyTypeName: VKScript, Assembly-CSharp
+        m_MethodName: Inter
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10454,6 +10463,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 85093831}
+        m_TargetAssemblyTypeName: GameSystem, Assembly-CSharp
+        m_MethodName: ChangeScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Home
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!224 &7464312469537093491

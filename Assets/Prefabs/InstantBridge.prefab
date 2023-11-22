@@ -9,9 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5064292178346001129}
-  - component: {fileID: 7550701685617632523}
-  - component: {fileID: 5064292178346001128}
-  - component: {fileID: 5064292178346001135}
+  - component: {fileID: 7109701445828149486}
   m_Layer: 0
   m_Name: InstantBridge
   m_TagString: Untagged
@@ -34,7 +32,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7550701685617632523
+--- !u!114 &7109701445828149486
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -43,30 +41,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 5064292178346001134}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95ec172de477c1a4bbe1500a7cb61b6e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &5064292178346001128
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5064292178346001134}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a592c5adaaee7242bb504e84ebe0df5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &5064292178346001135
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5064292178346001134}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0789ec78fdbc41f4aec63f29ef6f2a64, type: 3}
+  m_Script: {fileID: 11500000, guid: ffcc6d097e3ea2843b79a56b94e2e656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
