@@ -3762,6 +3762,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: InstantBridge
       objectReference: {fileID: 0}
+    - target: {fileID: 7109701445828149486, guid: fcbeb6898f6057b4d830439ce744d0b8, type: 3}
+      propertyPath: gameplay
+      value: 
+      objectReference: {fileID: 307852590}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fcbeb6898f6057b4d830439ce744d0b8, type: 3}
 --- !u!114 &788582859 stripped
@@ -5527,7 +5531,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7464312469442605682}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -5580,24 +5584,24 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 788582859}
         m_TargetAssemblyTypeName: VKScript, Assembly-CSharp
+        m_MethodName: RewardHint
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 788582859}
+        m_TargetAssemblyTypeName: VKScript, Assembly-CSharp
         m_MethodName: Reward
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 1
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 307852592}
-        m_TargetAssemblyTypeName: Gameplay, Assembly-CSharp
-        m_MethodName: Hint
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -6010,7 +6014,7 @@ RectTransform:
   m_Children:
   - {fileID: 15262269}
   m_Father: {fileID: 7464312469442605682}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -6063,7 +6067,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 788582859}
         m_TargetAssemblyTypeName: VKScript, Assembly-CSharp
-        m_MethodName: Reward
+        m_MethodName: RewardNext
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6073,9 +6077,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 307852592}
-        m_TargetAssemblyTypeName: Gameplay, Assembly-CSharp
-        m_MethodName: Next
+      - m_Target: {fileID: 788582859}
+        m_TargetAssemblyTypeName: VKScript, Assembly-CSharp
+        m_MethodName: Reward
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10325,8 +10329,8 @@ RectTransform:
   - {fileID: 7464312470515124652}
   - {fileID: 7464312470575250230}
   - {fileID: 938400695}
-  - {fileID: 1358248682}
   - {fileID: 1222896526}
+  - {fileID: 1358248682}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

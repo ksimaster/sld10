@@ -57200,6 +57200,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: InstantBridge
       objectReference: {fileID: 0}
+    - target: {fileID: 7109701445828149486, guid: fcbeb6898f6057b4d830439ce744d0b8, type: 3}
+      propertyPath: gameplay
+      value: 
+      objectReference: {fileID: 307852590}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fcbeb6898f6057b4d830439ce744d0b8, type: 3}
 --- !u!1001 &5957115311732469393
