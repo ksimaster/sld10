@@ -48,9 +48,11 @@ public class VKScript : MonoBehaviour
                 break;
             case InterstitialState.Failed:
                 AudioListener.pause = false;
+                Bridge.advertisement.interstitialStateChanged -= OnInterstitialStateChanged;
                 break;
             case InterstitialState.Closed:
                 AudioListener.pause = false;
+                Bridge.advertisement.interstitialStateChanged -= OnInterstitialStateChanged;
                 break;
             case InterstitialState.Loading:
                 AudioListener.pause = false;
@@ -79,9 +81,11 @@ public class VKScript : MonoBehaviour
                 break;
             case RewardedState.Failed:
                 AudioListener.pause = false;
+                Bridge.advertisement.rewardedStateChanged -= RewardedResult;
                 break;
             case RewardedState.Closed:
                 AudioListener.pause = false;
+                Bridge.advertisement.rewardedStateChanged -= RewardedResult;
                 break;
             case RewardedState.Loading:
                 AudioListener.pause = false;
