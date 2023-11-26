@@ -21,24 +21,20 @@ public class VKScript : MonoBehaviour
 
 
     }
-
-    public void Inter()
-    {
-        Bridge.advertisement.interstitialStateChanged += OnInterstitialStateChanged;
-        Bridge.advertisement.ShowInterstitial();
-        
-    }
-
-    public void Reward()
-    {
-        Bridge.advertisement.rewardedStateChanged += RewardedResult;
-        Bridge.advertisement.ShowRewarded();
-    }
+    #region Social
     public void Invite()
     {
         Bridge.social.InviteFriends();
     }
-    
+    #endregion
+
+    #region Interstitial
+    public void Inter()
+    {
+        Bridge.advertisement.interstitialStateChanged += OnInterstitialStateChanged;
+        Bridge.advertisement.ShowInterstitial();
+    }
+
     private void OnInterstitialStateChanged(InterstitialState stateInter)
     {
         switch (stateInter)
@@ -59,20 +55,17 @@ public class VKScript : MonoBehaviour
                 break;
 
         }
-        /*
-        if (stateInter.Equals("Opened"))
-        {
-            AudioListener.volume = 0;
-        }
-        else
-        {
-            AudioListener.volume = 1;
-            Bridge.advertisement.interstitialStateChanged -= OnInterstitialStateChanged;
-        }
-        */
-    }
 
-   private void RewardedResult(RewardedState state)
+    }
+    #endregion
+
+    #region Reward
+    public void Reward()
+    {
+        Bridge.advertisement.rewardedStateChanged += RewardedResult;
+        Bridge.advertisement.ShowRewarded();
+    }
+    private void RewardedResult(RewardedState state)
     {
         switch (state)
         {
@@ -130,7 +123,9 @@ public class VKScript : MonoBehaviour
         }
         */
     }
+    #endregion
 
+    #region Game Logic
     public void RewardHint()
     {
         PlayerPrefs.SetInt("Rewarded", 1);
@@ -140,4 +135,5 @@ public class VKScript : MonoBehaviour
     {
         PlayerPrefs.SetInt("Rewarded", 2);
     }
+    #endregion
 }
