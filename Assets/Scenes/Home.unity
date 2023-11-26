@@ -8326,7 +8326,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0.0000076294, y: -29.649048}
+  m_AnchoredPosition: {x: 0.0000076294, y: -29.64917}
   m_SizeDelta: {x: 307.8, y: 159.6089}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &321643313
@@ -40436,7 +40436,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1539158839}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
@@ -40538,7 +40538,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textMPComponent: {fileID: 0}
+  textMPComponent: {fileID: 1539158841}
   uniqueFontTMP: {fileID: 0}
   textLComponent: {fileID: 0}
   infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
@@ -41524,7 +41524,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1571125616}
   m_OnClick:
     m_PersistentCalls:
@@ -45487,6 +45487,7 @@ GameObject:
   - component: {fileID: 1774316849}
   - component: {fileID: 1774316848}
   - component: {fileID: 1774316850}
+  - component: {fileID: 1774316851}
   m_Layer: 0
   m_Name: popupSelectLevel
   m_TagString: Untagged
@@ -45569,6 +45570,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelUpdater: {fileID: 2000119407}
+--- !u!114 &1774316851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1774316846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dbd21e06dcac7e4887613f46bb7fc4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameObject1: {fileID: 1475610404}
+  gameObject2: {fileID: 765843967}
+  gameObjectNo: {fileID: 1677111061}
 --- !u!1 &1775894270
 GameObject:
   m_ObjectHideFlags: 0
@@ -55351,7 +55367,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2063594415}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 

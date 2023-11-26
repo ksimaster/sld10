@@ -267,27 +267,37 @@ public class Gameplay : MonoBehaviour {
         winPopup.DoEffect();
     }
 
-    public void Hint() {
+    public void Hint()
+    {
         //var draw = FindObjectOfType<DrawLevel>();
         var drawOur = GameObject.FindGameObjectsWithTag("Find");
-        if (drawOur != null) {
+        if (drawOur != null)
+        {
             //draw.Hint();
-            GuidePosition(drawOur[0].transform.position);
+            StartCoroutine(DelayedGuidePosition(drawOur[0].transform.position));
             return;
         }
 
         //var manyTimes = FindObjectOfType<EraseManyTimes>();
         var erase = GameObject.FindGameObjectsWithTag("Find");
-        if (erase != null) {
-            GuidePosition(erase[0].transform.position);
+        if (erase != null)
+        {
+            StartCoroutine(DelayedGuidePosition(erase[0].transform.position));
             return;
         }
 
         //var level = FindObjectOfType<LevelManager>();
         var lvl = GameObject.FindGameObjectsWithTag("Find");
-        if (lvl != null) {
-            GuidePosition(lvl[0].transform.position);
+        if (lvl != null)
+        {
+            StartCoroutine(DelayedGuidePosition(lvl[0].transform.position));
         }
+    }
+
+    IEnumerator DelayedGuidePosition(Vector3 position)
+    {
+        yield return new WaitForSeconds(1f);
+        GuidePosition(position);
     }
 
     public void GuidePosition(Vector2 pos) {
