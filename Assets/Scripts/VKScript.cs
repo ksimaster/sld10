@@ -34,7 +34,7 @@ public class VKScript : MonoBehaviour
         Bridge.advertisement.rewardedStateChanged += RewardedResult;
         Bridge.advertisement.ShowRewarded();
     }
-    public void Share()
+    public void Invite()
     {
         Bridge.social.InviteFriends();
     }

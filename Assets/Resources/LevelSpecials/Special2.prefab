@@ -669,7 +669,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e87892d369fc386448c412bda31cfad6, type: 2}
+  - {fileID: 2100000, guid: 51577af33ef76674191335c408cecb5d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -721,10 +721,8 @@ MonoBehaviour:
   calculateTangents: 0
   maskInteraction: 1
   maskMaterials:
-    materialsMaskDisabled:
-    - {fileID: 2100000, guid: 51577af33ef76674191335c408cecb5d, type: 2}
-    materialsInsideMask:
-    - {fileID: 2100000, guid: e87892d369fc386448c412bda31cfad6, type: 2}
+    materialsMaskDisabled: []
+    materialsInsideMask: []
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
   _animationName: normal
@@ -1816,6 +1814,26 @@ PrefabInstance:
     - target: {fileID: 617615929787850761, guid: a9ce316822501bf47b591ddebe5c0f67, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OnWatchAdsClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 2919846099350932480, guid: a9ce316822501bf47b591ddebe5c0f67, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2919846099350932480, guid: a9ce316822501bf47b591ddebe5c0f67, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2919846099350932480, guid: a9ce316822501bf47b591ddebe5c0f67, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 196.6904
+      objectReference: {fileID: 0}
+    - target: {fileID: 6655924347908468521, guid: a9ce316822501bf47b591ddebe5c0f67, type: 3}
+      propertyPath: m_fontSize
+      value: 36.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6655924347908468521, guid: a9ce316822501bf47b591ddebe5c0f67, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8188923279373554577, guid: a9ce316822501bf47b591ddebe5c0f67, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target

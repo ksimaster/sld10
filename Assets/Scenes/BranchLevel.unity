@@ -4490,6 +4490,14 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2835796553693145410, guid: eeadc56796468bf45987e31fa75e8e26, type: 3}
+      propertyPath: m_fontSize
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 2835796553693145410, guid: eeadc56796468bf45987e31fa75e8e26, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2835796554244848760, guid: eeadc56796468bf45987e31fa75e8e26, type: 3}
       propertyPath: m_IsActive
       value: 0
